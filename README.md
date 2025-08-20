@@ -1,54 +1,41 @@
-FRIDAY-2 Digital Assistant
+# FRIDAY-2: Voice-Activated Digital Assistant
 
-FRIDAY-2 is a small Python project that acts as a voice-activated personal assistant.
-It listens when you call “Friday” and can help you with handy tasks like opening websites, playing music, reading news, or answering questions using OpenAI GPT.
+**FRIDAY-2** is a Python-based, voice-activated personal assistant that listens to your commands and helps you perform tasks like opening websites, playing music, fetching news, and more. Think of it as your very own AI companion!
 
-Features
-Wake Word
+---
 
-Say “Friday” to get its attention.
+## Features
 
-Open Websites
+* **Wake Word Activation**: Just say **“Friday”** to start interacting.
+* **Open Websites**: Quick commands like:
 
-Quick commands like:
-open google, open youtube, open facebook, open linkedin.
+  * “Open Google”
+  * “Open YouTube”
+  * “Open LinkedIn”
+* **Play Music**:
 
-Play Music
+  * Plays songs from a predefined music library (`musicLibrary.py`)
+  * Can search YouTube if a song is not available locally
+* **News Updates**: Fetches top headlines using the NewsAPI
+* **Chat with GPT**: If a command is unknown, FRIDAY-2 uses OpenAI GPT to answer questions
+* **Voice Feedback**: Provides spoken responses to your commands
 
-Plays songs from your musicLibrary.py directly.
+---
 
-If a song isn’t in your library, it searches YouTube and plays the first result automatically.
+## Repository Structure
 
-Read News
-
-Fetches top headlines using NewsAPI.
-
-Chat / Answer Questions
-
-If FRIDAY-2 doesn’t understand a command, it queries GPT for a short answer.
-
-Speech
-
-Speaks back using gTTS + pygame, with pyttsx3 as a backup.
-
-Project Structure
+```
 FRIDAY-2-digital-assistant/
 │
-├── main.py          # main logic of the assistant
-├── musicLibrary.py  # your playlist (song names → YouTube links)
-├── requirements.txt # Python dependencies
-└── README.md        # project description
+├─ main.py            # Core assistant logic & command handling
+├─ musicLibrary.py    # Local music library
+├─ README.md          # Project overview & setup instructions
+├─ requirements.txt   # Python dependencies
+└─ config.py          # API keys & constants (optional)
+```
 
-How to Use
+---
 
-Install dependencies:
+## Setup Instructions
 
-pip install -r requirements.txt
-
-
-Run the assistant:
-
-python main.py
-
-
-Say “Friday” followed by your command.
+1. \*\*Clone the repository
