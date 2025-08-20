@@ -124,3 +124,4 @@ pip install -r
 ## License
 
 MIT License © 2025 Pratyush Kumar
+  ![MIT License](https://img.shields.io/badge/license-MIT-green)
